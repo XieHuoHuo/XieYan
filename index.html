@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="en-btn" class="lang-btn active" onclick="switchLanguage('en')">English</button>
+        <button id="zh-btn" class="lang-btn" onclick="switchLanguage('zh')">中文</button>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <div class="placeholder-avatar">👤</div>
+                </div>
+                <div class="profile-info">
+                    <h1 class="name" data-en="Your Name" data-zh="你的名字">Your Name</h1>
+                    <p class="title" data-en="Ph.D. Student / Researcher" data-zh="博士生 / 研究员">Ph.D. Student / Researcher</p>
+                    <p class="affiliation" data-en="Department of Computer Science" data-zh="计算机科学系">Department of Computer Science</p>
+                    <p class="university" data-en="University Name" data-zh="大学名称">University Name</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#about" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="#education" data-en="Education" data-zh="教育背景">Education</a></li>
+                <li><a href="#research" data-en="Research" data-zh="研究方向">Research</a></li>
+                <li><a href="#publications" data-en="Publications" data-zh="发表论文">Publications</a></li>
+                <li><a href="#contact" data-en="Contact" data-zh="联系方式">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
+                <div class="section-content">
+                    <p data-en="I am a Ph.D. student/researcher specializing in [Your Research Area]. My research interests include artificial intelligence, machine learning, and related fields. I am passionate about advancing the state-of-the-art in these areas through innovative research and collaboration."
+                       data-zh="我是一名专注于[你的研究领域]的博士生/研究员。我的研究兴趣包括人工智能、机器学习及相关领域。我热衷于通过创新研究和合作来推动这些领域的最新发展。">
+                       I am a Ph.D. student/researcher specializing in [Your Research Area]. My research interests include artificial intelligence, machine learning, and related fields. I am passionate about advancing the state-of-the-art in these areas through innovative research and collaboration.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section">
+                <h2 class="section-title" data-en="Education" data-zh="教育背景">Education</h2>
+                <div class="section-content">
+                    <div class="education-item">
+                        <h3 class="degree" data-en="Ph.D. in Computer Science" data-zh="计算机科学博士">Ph.D. in Computer Science</h3>
+                        <p class="institution" data-en="University Name, 2020 - Present" data-zh="大学名称，2020年至今">University Name, 2020 - Present</p>
+                        <p class="description" data-en="Focus: Artificial Intelligence and Machine Learning" data-zh="研究方向：人工智能与机器学习">Focus: Artificial Intelligence and Machine Learning</p>
+                    </div>
+                    <div class="education-item">
+                        <h3 class="degree" data-en="M.S. in Computer Science" data-zh="计算机科学硕士">M.S. in Computer Science</h3>
+                        <p class="institution" data-en="University Name, 2018 - 2020" data-zh="大学名称，2018年 - 2020年">University Name, 2018 - 2020</p>
+                        <p class="description" data-en="Thesis: [Your Thesis Title]" data-zh="论文：[你的论文题目]">Thesis: [Your Thesis Title]</p>
+                    </div>
+                    <div class="education-item">
+                        <h3 class="degree" data-en="B.S. in Computer Science" data-zh="计算机科学学士">B.S. in Computer Science</h3>
+                        <p class="institution" data-en="University Name, 2014 - 2018" data-zh="大学名称，2014年 - 2018年">University Name, 2014 - 2018</p>
+                        <p class="description" data-en="GPA: 3.8/4.0" data-zh="绩点：3.8/4.0">GPA: 3.8/4.0</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research Section -->
+            <section id="research" class="section">
+                <h2 class="section-title" data-en="Research Interests" data-zh="研究方向">Research Interests</h2>
+                <div class="section-content">
+                    <ul class="research-list">
+                        <li data-en="Machine Learning and Deep Learning" data-zh="机器学习与深度学习">Machine Learning and Deep Learning</li>
+                        <li data-en="Natural Language Processing" data-zh="自然语言处理">Natural Language Processing</li>
+                        <li data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</li>
+                        <li data-en="Artificial Intelligence Applications" data-zh="人工智能应用">Artificial Intelligence Applications</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Publications Section -->
+            <section id="publications" class="section">
+                <h2 class="section-title" data-en="Publications" data-zh="发表论文">Publications</h2>
+                <div class="section-content">
+                    <div class="publication-item">
+                        <h3 class="pub-title" data-en="[Paper Title 1]" data-zh="[论文标题1]">[Paper Title 1]</h3>
+                        <p class="pub-authors" data-en="Author 1, Author 2, Your Name" data-zh="作者1，作者2，你的名字">Author 1, Author 2, Your Name</p>
+                        <p class="pub-venue" data-en="Conference/Journal Name, Year" data-zh="会议/期刊名称，年份">Conference/Journal Name, Year</p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link" data-en="[Paper]" data-zh="[论文]">[Paper]</a>
+                            <a href="#" class="pub-link" data-en="[Code]" data-zh="[代码]">[Code]</a>
+                        </div>
+                    </div>
+                    <div class="publication-item">
+                        <h3 class="pub-title" data-en="[Paper Title 2]" data-zh="[论文标题2]">[Paper Title 2]</h3>
+                        <p class="pub-authors" data-en="Your Name, Author 2, Author 3" data-zh="你的名字，作者2，作者3">Your Name, Author 2, Author 3</p>
+                        <p class="pub-venue" data-en="Conference/Journal Name, Year" data-zh="会议/期刊名称，年份">Conference/Journal Name, Year</p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link" data-en="[Paper]" data-zh="[论文]">[Paper]</a>
+                            <a href="#" class="pub-link" data-en="[Code]" data-zh="[代码]">[Code]</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h2 class="section-title" data-en="Contact" data-zh="联系方式">Contact</h2>
+                <div class="section-content">
+                    <div class="contact-info">
+                        <p><strong data-en="Email:" data-zh="邮箱：">Email:</strong> <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
+                        <p><strong data-en="Office:" data-zh="办公室：">Office:</strong> <span data-en="Room XXX, Building Name" data-zh="XXX房间，建筑名称">Room XXX, Building Name</span></p>
+                        <p><strong data-en="Address:" data-zh="地址：">Address:</strong> <span data-en="Department, University, City, Country" data-zh="系名，大学，城市，国家">Department, University, City, Country</span></p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-en="Google Scholar" data-zh="谷歌学术">Google Scholar</a>
+                        <a href="#" class="social-link" data-en="GitHub" data-zh="GitHub">GitHub</a>
+                        <a href="#" class="social-link" data-en="LinkedIn" data-zh="领英">LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="© 2024 Your Name. All rights reserved." data-zh="© 2024 你的名字。保留所有权利。">© 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
